@@ -27,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open custom URL in specified browser</string>
+	<string>Open Google</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -37,7 +37,7 @@
 				<string>on alfred_script(q)
 tell application "Safari"
 	if q = "" then
-		set q to "http://naver.com"
+		set q to "https://www.google.com/?client=safari"
 	end if	make new document with properties {URL: q}	activateend tell
 end alfred_script</string>
 				<key>cachescript</key>
@@ -56,11 +56,11 @@ end alfred_script</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>cc</string>
+				<string>go</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string></string>
+				<string>Open Google</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -79,9 +79,9 @@ end alfred_script</string>
 		<key>27E953E6-D7CA-4038-BA33-36E38547091F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>35</integer>
+			<integer>50</integer>
 		</dict>
 		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
 		<dict>
