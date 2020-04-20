@@ -27,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open Google</string>
+	<string>Github</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -37,7 +37,11 @@
 				<string>on alfred_script(q)
 tell application "Safari"
 	if q = "" then
-		set q to "https://www.google.com/?client=safari"
+		set q to "https://github.com"
+	else if q = "kara" then
+		set q to "https://github.com/xiote/karabiner"
+	else
+		set q to "https://github.com/xiote/" &amp; q
 	end if	make new document with properties {URL: q}	activateend tell
 end alfred_script</string>
 				<key>cachescript</key>
@@ -56,11 +60,11 @@ end alfred_script</string>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>go</string>
+				<string>gh</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Open Google</string>
+				<string>Github</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
